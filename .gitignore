@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data and logs
+*.npz
+*.npy
+xiangliang_data/
+*.log
+*.wal
+
+# Caching
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Dependencies lock (optional)
+poetry.lock
+requirements.lock
