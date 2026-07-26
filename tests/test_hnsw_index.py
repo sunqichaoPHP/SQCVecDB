@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from xiangliang.index.flat import FlatIndex
-from xiangliang.index.hnsw import HNSWIndex
+from sqcvecdb.index.flat import FlatIndex
+from sqcvecdb.index.hnsw import HNSWIndex
 
 
 def test_add_and_len():

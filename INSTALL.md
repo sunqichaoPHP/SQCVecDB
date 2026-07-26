@@ -83,7 +83,7 @@ pip install -e ".[dev,service,cluster]"
 ### 快速测试
 
 ```python
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 import numpy as np
 
 # 创建 Collection
@@ -112,7 +112,7 @@ pytest tests/ -v
 ### Python SDK 使用
 
 ```python
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 
 # 创建向量数据库
 col = Collection(name="my_db", dim=384, index_type="ivf")
@@ -138,7 +138,7 @@ col.checkpoint()
 pip install SQCVecDB[service]
 
 # 启动服务
-uvicorn xiangliang.service:app --port 8000
+uvicorn sqcvecdb.service:app --port 8000
 
 # 在另一个终端测试
 curl -X POST http://localhost:8000/collections \
@@ -203,7 +203,7 @@ RUN pip install --no-cache-dir SQCVecDB[service]
 EXPOSE 8000
 
 # 启动服务
-CMD ["uvicorn", "xiangliang.service:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "sqcvecdb.service:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
 构建并运行：

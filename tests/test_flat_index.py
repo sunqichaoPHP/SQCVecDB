@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from xiangliang.index.flat import FlatIndex
+from sqcvecdb.index.flat import FlatIndex
 
 
 def make_index(metric="l2", dim=4):

@@ -128,7 +128,7 @@ pytest -q
 ### 2. Python SDK 使用
 
 ```python
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 import numpy as np
 
 # 创建 Collection（向量集合）
@@ -167,7 +167,7 @@ col.checkpoint()
 
 ```bash
 # 启动服务
-uvicorn xiangliang.service:app --port 8000
+uvicorn sqcvecdb.service:app --port 8000
 
 # 或用演示脚本
 python examples/run_service.py --port 8000
@@ -212,7 +212,7 @@ curl -X POST http://localhost:8000/collections/documents/search \
 #### 方式 1：直接使用 Python SDK
 
 ```python
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 from sentence_transformers import SentenceTransformer
 
 # 加载嵌入模型
@@ -324,7 +324,7 @@ SQCVecDB/
 ├── LICENSE                            # MIT 许可证
 ├── pyproject.toml                     # 项目配置
 │
-├── src/xiangliang/
+├── src/sqcvecdb/
 │   ├── distance.py                    # 距离度量
 │   ├── collection.py                  # 单机核心 API
 │   ├── service.py                     # REST 服务层
@@ -345,7 +345,7 @@ SQCVecDB/
 │   ├── quickstart.py                  # 快速开始
 │   ├── rag_demo.py                    # RAG 集成
 │   └── cluster_demo.py                # 分布式演示
-└── xiangliang_data/                   # 数据目录
+└── sqcvecdb_data/                   # 数据目录
 ```
 
 ---
@@ -360,7 +360,7 @@ pytest -v
 pytest -q
 
 # 测试覆盖率
-pytest --cov=src/xiangliang tests/
+pytest --cov=src/sqcvecdb tests/
 ```
 
 **测试统计**：70 个测试 | 100% 通过

@@ -30,7 +30,7 @@ htmlcov/
 # Data and logs
 *.npz
 *.npy
-xiangliang_data/
+sqcvecdb_data/
 *.log
 *.wal
 

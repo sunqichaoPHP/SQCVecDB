@@ -42,7 +42,7 @@
 ### 2. 初始化 Git 并推送
 
 ```bash
-cd /Users/sqc/Documents/codebuddy/xiangliang
+cd /Users/sqc/Documents/codebuddy/sqcvecdb
 
 # 初始化 git（如果尚未初始化）
 git init

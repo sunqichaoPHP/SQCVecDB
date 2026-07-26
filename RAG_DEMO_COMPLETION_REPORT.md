@@ -377,7 +377,7 @@ rag = AdvancedRAG(llm_name="gpt-4")
 外部资源:
 - [SQCVecDB 文档](./README.md)
 - [向量数据库介绍](./README.md#项目介绍)
-- [索引算法](./src/xiangliang/index/)
+- [索引算法](./src/sqcvecdb/index/)
 
 ---
 

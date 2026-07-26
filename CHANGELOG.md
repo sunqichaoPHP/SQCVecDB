@@ -81,7 +81,7 @@
 ### 🏗️ 项目结构
 
 ```
-src/xiangliang/
+src/sqcvecdb/
 ├── distance.py              # 距离度量
 ├── collection.py            # 单机核心 API
 ├── service.py               # REST 服务

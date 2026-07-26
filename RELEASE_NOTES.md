@@ -51,7 +51,7 @@ pytest -q  # 验证安装
 ### 3 分钟 Python 代码
 
 ```python
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 
 col = Collection(name="docs", dim=384, index_type="ivf")
 col.insert("1", vector=[...], metadata={"text": "文档"})
@@ -61,7 +61,7 @@ results = col.search([...], top_k=5)
 ### REST API
 
 ```bash
-uvicorn xiangliang.service:app --port 8000
+uvicorn sqcvecdb.service:app --port 8000
 curl http://localhost:8000/health
 ```
 
@@ -89,20 +89,20 @@ curl http://localhost:8000/health
 ├── .github/
 │   └── workflows/
 │       └── tests.yml      # GitHub Actions CI/CD
-├── src/xiangliang/        # 源代码（2500+ 行）
+├── src/sqcvecdb/        # 源代码（2500+ 行）
 ├── tests/                 # 70 个单元测试
 ├── examples/
 │   ├── quickstart.py      # 快速开始
 │   ├── rag_demo.py        # RAG 集成（新增）
 │   ├── cluster_demo.py    # 分布式演示
 │   └── ...
-└── xiangliang_data/       # 数据目录
+└── sqcvecdb_data/       # 数据目录
 ```
 
 ## 🎯 RAG 集成示例
 
 ```python
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 from sentence_transformers import SentenceTransformer
 
 # 加载嵌入模型

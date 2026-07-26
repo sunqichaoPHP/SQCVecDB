@@ -72,7 +72,7 @@ Python 版本： 3.9+
   6. 点击 "Create repository"
 
 【第 2 步】推送代码到 GitHub
-  cd /Users/sqc/Documents/codebuddy/xiangliang
+  cd /Users/sqc/Documents/codebuddy/sqcvecdb
   git init
   git add .
   git commit -m "chore: Initial commit - SQCVecDB v1.0.0"

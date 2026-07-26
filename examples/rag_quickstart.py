@@ -18,7 +18,7 @@ from typing import List, Optional
 
 import numpy as np
 
-from xiangliang import Collection
+from sqcvecdb import Collection
 
 
 # ============================================================================

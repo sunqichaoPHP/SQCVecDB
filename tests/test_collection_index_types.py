@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 
 
 @pytest.fixture

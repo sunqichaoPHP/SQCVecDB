@@ -262,7 +262,7 @@ A:
 
 - [SQCVecDB 官方文档](../README.md)
 - [向量数据库基础](../README.md#架构设计)
-- [索引算法详解](../src/xiangliang/index/)
+- [索引算法详解](../src/sqcvecdb/index/)
 - [测试用例参考](../tests/)
 
 ---

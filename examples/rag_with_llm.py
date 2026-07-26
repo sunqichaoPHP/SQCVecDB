@@ -17,7 +17,7 @@ from typing import List, Optional, Callable, Dict, Any
 import hashlib
 import numpy as np
 
-from xiangliang import Collection
+from sqcvecdb import Collection
 
 
 # ============================================================================

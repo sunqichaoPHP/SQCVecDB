@@ -11,9 +11,9 @@ import time
 
 import numpy as np
 
-from xiangliang.index.flat import FlatIndex
-from xiangliang.index.hnsw import HNSWIndex
-from xiangliang.index.ivf import IVFIndex
+from sqcvecdb.index.flat import FlatIndex
+from sqcvecdb.index.hnsw import HNSWIndex
+from sqcvecdb.index.ivf import IVFIndex
 
 DIM = 32
 N_VECTORS = 5000

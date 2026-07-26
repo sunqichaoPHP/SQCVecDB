@@ -3,15 +3,15 @@
 分布式向量数据库集群演示
 
 演示内容：
-1. 启动多个 xiangliang 服务实例（作为集群节点）
+1. 启动多个 sqcvecdb 服务实例（作为集群节点）
 2. 通过分布式客户端与集群交互
 3. 展示一致性哈希分片、scatter-gather 查询等
 
 运行前准备：
 1. 启动 3 个 API 服务：
-   - node1: uvicorn xiangliang.service:app --port 8001
-   - node2: uvicorn xiangliang.service:app --port 8002
-   - node3: uvicorn xiangliang.service:app --port 8003
+   - node1: uvicorn sqcvecdb.service:app --port 8001
+   - node2: uvicorn sqcvecdb.service:app --port 8002
+   - node3: uvicorn sqcvecdb.service:app --port 8003
 
 2. 运行此脚本：
    python examples/cluster_demo.py
@@ -19,7 +19,7 @@
 
 import time
 import numpy as np
-from xiangliang.cluster import DistributedVectorDBClient, ConsistentHash
+from sqcvecdb.cluster import DistributedVectorDBClient, ConsistentHash
 
 
 def demo_consistent_hash():
@@ -106,9 +106,9 @@ def demo_distributed_client():
         print()
         print("⚠️  没有节点可达，跳过集群演示")
         print("请先启动 3 个 API 服务：")
-        print("  uvicorn xiangliang.service:app --port 8001")
-        print("  uvicorn xiangliang.service:app --port 8002")
-        print("  uvicorn xiangliang.service:app --port 8003")
+        print("  uvicorn sqcvecdb.service:app --port 8001")
+        print("  uvicorn sqcvecdb.service:app --port 8002")
+        print("  uvicorn sqcvecdb.service:app --port 8003")
         return
 
     print(f"✓ 共 {reachable} 个节点可达，继续演示")
@@ -258,7 +258,7 @@ def demo_cluster_topology():
 
 def main():
     print()
-    print("  🚀 xiangliang 分布式集群演示（Phase 5）")
+    print("  🚀 sqcvecdb 分布式集群演示（Phase 5）")
     print()
 
     # 演示 1：一致性哈希

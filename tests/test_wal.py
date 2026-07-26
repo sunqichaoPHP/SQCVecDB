@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from xiangliang.storage.wal import WALReader, WALWriter, truncate_wal
+from sqcvecdb.storage.wal import WALReader, WALWriter, truncate_wal
 
 
 @pytest.fixture

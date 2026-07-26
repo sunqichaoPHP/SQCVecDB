@@ -126,7 +126,7 @@ docs: 补充 RAG 集成指南
 ```python
 # tests/test_my_feature.py
 import pytest
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 
 class TestMyFeature:
     def test_basic_functionality(self):
@@ -154,7 +154,7 @@ pytest tests/test_my_feature.py -v
 pytest tests/test_my_feature.py::TestMyFeature::test_basic_functionality -v
 
 # 测试覆盖率
-pytest --cov=src/xiangliang tests/
+pytest --cov=src/sqcvecdb tests/
 ```
 
 ## 📚 文档

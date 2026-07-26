@@ -23,7 +23,7 @@ from typing import Any, Optional, List, Dict, Tuple
 
 import numpy as np
 
-from xiangliang import Collection
+from sqcvecdb import Collection
 
 
 # ============================================================================

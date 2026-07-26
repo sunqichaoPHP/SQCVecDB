@@ -11,7 +11,7 @@ from pathlib import Path
 
 import numpy as np
 
-from xiangliang import Collection
+from sqcvecdb import Collection
 
 
 def main() -> None:

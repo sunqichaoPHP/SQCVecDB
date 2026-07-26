@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-xiangliang REST API 服务演示
+sqcvecdb REST API 服务演示
 
 展示如何启动服务、创建 collection、插入/查询向量
 """
@@ -16,11 +16,11 @@ BASE_URL = "http://127.0.0.1:8000"
 
 def main():
     print("="*60)
-    print("xiangliang REST API 服务演示")
+    print("sqcvecdb REST API 服务演示")
     print("="*60)
     print()
     print("⚠️  此演示脚本假设 API 服务已启动")
-    print("启动方式: uvicorn xiangliang.service:app --reload")
+    print("启动方式: uvicorn sqcvecdb.service:app --reload")
     print()
 
     # 1. 健康检查

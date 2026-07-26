@@ -12,7 +12,7 @@ RAG（检索增强生成）集成演示
 """
 
 import numpy as np
-from xiangliang.collection import Collection
+from sqcvecdb.collection import Collection
 
 
 def demo_basic_rag():

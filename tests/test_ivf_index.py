@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from xiangliang.index.flat import FlatIndex
-from xiangliang.index.ivf import IVFIndex
+from sqcvecdb.index.flat import FlatIndex
+from sqcvecdb.index.ivf import IVFIndex
 
 
 def test_add_triggers_training_and_len():

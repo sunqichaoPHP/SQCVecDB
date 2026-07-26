@@ -1,5 +1,5 @@
 """
-测试 xiangliang REST API 服务
+测试 sqcvecdb REST API 服务
 """
 
 import pytest
@@ -7,7 +7,7 @@ import json
 import tempfile
 from pathlib import Path
 from fastapi.testclient import TestClient
-from xiangliang.service import app, init_service
+from sqcvecdb.service import app, init_service
 
 
 @pytest.fixture

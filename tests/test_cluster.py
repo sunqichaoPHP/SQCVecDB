@@ -5,8 +5,8 @@ Phase 5 集群测试
 """
 
 import pytest
-from xiangliang.cluster.consistent_hash import ConsistentHash
-from xiangliang.cluster.client import DistributedVectorDBClient
+from sqcvecdb.cluster.consistent_hash import ConsistentHash
+from sqcvecdb.cluster.client import DistributedVectorDBClient
 
 
 class TestConsistentHash:
